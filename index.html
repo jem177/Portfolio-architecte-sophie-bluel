@@ -113,7 +113,12 @@
             <label for="title">Titre</label>
             <input type="text" name="title" id="title" required />
             <label for="categoryInput">Catégorie</label>
-            <select id="categoryInput" name="category" required></select>
+            <select id="categoryInput" name="category" required>
+              <option value="" disabled selected>
+                Sélectionnez une catégorie
+              </option>
+            </select>
+
             <div class="container-button-add-work">
               <button type="submit" class="button-add-work">Valider</button>
             </div>
