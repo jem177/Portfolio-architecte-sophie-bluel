@@ -358,12 +358,12 @@ footer nav ul {
   position: relative;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding-bottom: 20px;
   max-width: 630px;
   height: 50%;
   background-color: #ffffff;
   border-radius: 10px;
-  margin: 15% auto;
+  margin: 20vh auto;
 }
 .modal-wrapper h2 {
   margin-top: 40px;
@@ -432,16 +432,15 @@ footer nav ul {
 }
 
 .modalAddWorks {
-  display: none;
+  display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  position: relative;
+  justify-content: space-between;
   align-items: center;
-  position: fixed;
   max-width: 630px;
   height: 50%;
-  background-color: white;
-  border-radius: 5px;
-  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
   margin: 20vh auto;
 }
 .modalAddWorks .arrow-left {
