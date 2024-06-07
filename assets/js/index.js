@@ -146,13 +146,7 @@ const showModal = () => toggleClass(modalsContainer, "display", "remove");
 const hideModal = () => toggleClass(modalsContainer, "display", "add");
 const hideModalAdd = () => {
   toggleClass(modalAddWorks, "display", "add");
-  resetModalState();
-};
-
-const resetModalState = () => {
-  toggleClass(modalsContainer, "display", "add");
-  modalDelWorks.style.display = "flex";
-  modalAddWorks.style.display = "none";
+  toggleModalVisibility(modalDelWorks, modalAddWorks, true);
 };
 
 openModal.addEventListener("click", showModal);
@@ -166,9 +160,9 @@ modalsContainer.addEventListener("click", (e) => {
   }
 });
 
-const toggleModalVisibility = (modalToShow, modalToHide, reset = false) => {
-  modalToHide.style.display = "none";
-  modalToShow.style.display = "flex";
+const toggleModalVisibility = (modalDelWorks, modalAddWorks, reset = false) => {
+  modalAddWorks.style.display = "none";
+  modalDelWorks.style.display = "flex";
   if (reset) {
     modalDelWorks.style.display = "flex";
     modalAddWorks.style.display = "none";
