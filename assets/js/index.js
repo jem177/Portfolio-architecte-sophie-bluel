@@ -101,7 +101,7 @@ function setActiveButton(activeButton) {
 /**
  *
  * login check
- * en faire une fonction//avec la barre noir
+ *
  *
  */
 const isUserLoggedIn = () => localStorage.getItem("loged") === "true";
